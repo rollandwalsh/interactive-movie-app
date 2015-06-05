@@ -11,7 +11,7 @@ app.get('/', function(req, res){
 
 // Load routes
 require('./routes/user')(app); //user routes
-require('./routes/note')(app); // note routes
+require('./routes/movie')(app); // movie routes
 require('./routes/category')(app); // category routes
 
 module.exports = app;
