@@ -4,16 +4,22 @@
   "description": "A quick app demonstrating my angular.js abilities",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rollandwalsh/interactive-movie-app.git"
   },
   "author": "Rolland Walsh",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rollandwalsh/interactive-movie-app/issues"
   },
-  "homepage": "https://github.com/rollandwalsh/interactive-movie-app#readme"
+  "homepage": "https://github.com/rollandwalsh/interactive-movie-app#readme",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
 }
