@@ -1,0 +1,1 @@
+angular.module('MovieApp').controller('MoviesShowController', function () {});

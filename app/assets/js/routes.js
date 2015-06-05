@@ -5,22 +5,22 @@ angular.module('MovieApp').config(function ($routeProvider) {
 		})
 
 		.when('/movies', {
-			templateUrl: 'assets/templates/movies/index.html'
-			controller: 'MoviesIndexController'
+			templateUrl: "assets/templates/movies/index.html",
+			controller: "MoviesIndexController"
 		})
 
 		.when('/movies/new', {
-			templateUrl: 'assets/templates/movies/new.html'
-			controller: 'MoviesCreateController'
+			templateUrl: "assets/templates/movies/new.html",
+			controller: "MoviesCreateController"
 		})
 
 		.when('/movies/:id', {
-			templateUrl: 'assets/templates/movies/show.html'
-			controller: 'MoviesShowController'
+			templateUrl: "assets/templates/movies/show.html",
+			controller: "MoviesCreateController"
 		})
-		
+
 		.when('/movies/:id/edit', {
-			templateUrl: 'assets/templates/movies/edit.html'
-			controller: 'MoviesEditController'
+			templateUrl: "assets/templates/movies/edit.html",
+			controller: "MoviesCreateController"
 		})
 });
