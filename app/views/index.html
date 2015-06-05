@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="MovieApp">
+	<head>
+		<title>Interactive Movie App</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+	</head>
+
+	<body>
+		<h1>Hellow world!</h1>
+		<div ng-view></div>
+	</body>
+
+	<!-- Vendor -->
+	<script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
+	<script src="assets/js/vendor/angular.js"></script>
+	<script src="assets/js/vendor/angular-route.js"></script>
+	<script src="assets/js/vendor/angular-resource.js"></script>
+
+	<!-- App -->
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/routes.js"></script>
+
+	<!-- Directives -->
+
+	<!-- Controllers -->
+	<script src="assets/js/controllers/moviesIndexController.js"></script>
+	<script src="assets/js/controllers/moviesShowController.js"></script>
+	<script src="assets/js/controllers/moviesEditController.js"></script>
+	<script src="assets/js/controllers/moviesCreateController.js"></script>
+
+	<!-- Services -->
+	<script src="assets/js/services/movie.js"></script>
+</html>
