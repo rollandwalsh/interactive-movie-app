@@ -1,5 +1,3 @@
-angular.module('MovieApp').controller('MoviesIndexController', function (Note, $scope) {
-	$scope.notes = Note.query();
-
-	console.log($scope.notes)
+angular.module('MovieApp').controller('MoviesIndexController', function (Movie, $scope) {
+	$scope.notes = Movie.query();
 });

@@ -1,1 +1,8 @@
-<h2>Movies Index</h2>
+<h1>My Favorite Movies <a ng-href="#/movies/new" class="btn btn-default">Add Movie</a></h1>
+<div class="row">
+	<div ng-repeat="movie in notes" class="col-sm-6">
+		<h3><a ng-href="#/movies/{{movie.id}}">{{movie.title}}</a></h3>
+		<p>{{movie.description}}</p>
+		<p><span class="label label-primary">{{movie.category.name}}</span></p>
+	</div>
+</div>

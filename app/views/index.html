@@ -7,8 +7,17 @@
 	</head>
 
 	<body>
-		<h1>Hellow world!</h1>
-		<div ng-view></div>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="/#/">Movie App</a>
+					</div>
+				</div>
+				<ma-page-nav></ma-page-nav>
+			</div>
+		</nav>
+		<div ng-view class="container-fluid"></div>
 	</body>
 
 	<!-- Vendor -->
@@ -22,13 +31,18 @@
 	<script src="assets/js/routes.js"></script>
 
 	<!-- Directives -->
+	<script src="assets/js/directives/maPageNav.js"></script>
 
 	<!-- Controllers -->
 	<script src="assets/js/controllers/moviesIndexController.js"></script>
 	<script src="assets/js/controllers/moviesShowController.js"></script>
 	<script src="assets/js/controllers/moviesEditController.js"></script>
 	<script src="assets/js/controllers/moviesCreateController.js"></script>
+	<script src="assets/js/controllers/usersIndexController.js"></script>
+	<script src="assets/js/controllers/usersShowController.js"></script>
 
 	<!-- Services -->
 	<script src="assets/js/services/movie.js"></script>
+	<script src="assets/js/services/category.js"></script>
+	<script src="assets/js/services/user.js"></script>
 </html>

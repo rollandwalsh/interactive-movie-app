@@ -1,1 +1,1 @@
-angular.module('MovieApp', ['ngRoute', 'ngResource'])
+angular.module('MovieApp', ['ngRoute', 'ngResource']);

@@ -18,7 +18,7 @@ var buildMovies = function() {
   var movie;
 
   for(var i=0, l=rawMovies.length; i < l; i++) {
-    movie = rawMovie[i];
+    movie = rawMovies[i];
     movie.user = User.get(movie.userId);
     movie.category = Category.get(movie.categoryId);
     builtMovies.push(movie);

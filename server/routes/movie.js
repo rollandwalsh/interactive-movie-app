@@ -3,7 +3,7 @@ var Movie = require('../models/movie')
 
 module.exports = function(app) {
   app.get('/movies', function(req, res) {
-    res.json(movie.all());
+    res.json(Movie.all());
   });
 
   app.post('/movies', function(req, res) {
