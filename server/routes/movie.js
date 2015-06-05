@@ -2,8 +2,8 @@ var _ = require('lodash');
 var Movie = require('../models/movie')
 
 module.exports = function(app) {
-  app.get('/movie', function(req, res) {
-    res.json(Movie.all());
+  app.get('/movies', function(req, res) {
+    res.json(movie.all());
   });
 
   app.post('/movies', function(req, res) {
@@ -23,8 +23,8 @@ module.exports = function(app) {
   });
 
   app.get('/movies/:id', function(req, res) {
-    var noteId = parseInt(req.param('id'), 10);
-    res.json(Movie.get(noteId) || {});
+    var movieId = parseInt(req.param('id'), 10);
+    res.json(Movie.get(movieId) || {});
   });
 
   app.delete('/movies/:id', function(req, res) {
