@@ -1,14 +1,11 @@
 var _ = require('lodash');
 
 var categories = [
-  {"id": 1, "name": "Testing"},
-  {"id": 2, "name": "Personal Note"},
-  {"id": 3, "name": "Bash"},
-  {"id": 4, "name": "Idea"},
-  {"id": 5, "name": "Use with Caution"},
-  {"id": 6, "name": "Question"},
-  {"id": 7, "name": "Best Practice"},
-  {"id": 8, "name": "Code Snippet"}
+  {"id": 1, "name": "Comedy"},
+  {"id": 2, "name": "Action"},
+  {"id": 3, "name": "Drama"},
+  {"id": 4, "name": "Documentary"},
+  {"id": 5, "name": "Mystery"},
 ]
 
 module.exports = {
