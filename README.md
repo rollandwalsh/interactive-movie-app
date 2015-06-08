@@ -24,3 +24,5 @@ $ cd nodejsinteractive-movie-app
 $ npm install
 $ npm start
 ```
+
+View the app at http://localhost:8080. Any changes made will be forgotten with an app reset as the database is local.
