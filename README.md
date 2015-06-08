@@ -20,7 +20,7 @@ Then:
 
 ```
 $ git clone https://github.com/rollandwalsh/interactive-movie-app.git
-$ cd nodejsinteractive-movie-app
+$ cd interactive-movie-app
 $ npm install
 $ npm start
 ```
