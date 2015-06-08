@@ -1,7 +1,12 @@
 <h1>My Favorite Movies <a ng-href="#/movies/new" class="btn btn-default">Add Movie</a></h1>
+<div class="form-group">
+	Search: <input type="text" ng-model="search.input.$">
+</div>
+<ma-category-selector ng-model="search.category"></ma-category-selector>
+
 <div class="row">
-	<div ng-repeat="movie in notes" class="col-sm-6">
-		<h3><a ng-href="#/movies/{{movie.id}}">{{movie.title}}</a></h3>
+	<div ng-repeat="movie in movies | categoryFilter:search.category | filter:search.input" class="col-sm-6">
+		<h3><a title="{{movie.user.name}}" ng-href="#/movies/{{movie.id}}">{{movie.title}}</a></h3>
 		<p>{{movie.description}}</p>
 		<p><span class="label label-primary">{{movie.category.name}}</span></p>
 	</div>

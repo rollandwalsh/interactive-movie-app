@@ -1,3 +1,4 @@
 angular.module('MovieApp').controller('MoviesIndexController', function (Movie, $scope) {
-	$scope.notes = Movie.query();
+	$scope.movies = Movie.query();
+	$scope.search = {};
 });
