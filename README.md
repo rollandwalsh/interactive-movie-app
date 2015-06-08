@@ -25,6 +25,6 @@ $ npm install
 $ npm start
 ```
 
-* It may be necessary to use 'sudo' to use npm functions
+*It may be necessary to use 'sudo' to use npm functions*
 
 View the app at http://localhost:8080. Any changes made will be forgotten with an app reset as the database is local.
